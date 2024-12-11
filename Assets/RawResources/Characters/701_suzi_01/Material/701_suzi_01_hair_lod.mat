@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 701_suzi_01_hair_lod
+  m_Shader: {fileID: 4800000, guid: f199298bcef1ae441bad3c35a5f279cd, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ef6fc64c54b0dd14091acdd7ad2afc0b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _CutOut: 0
+    - _Cutoff: 0.5
+    - _DeadDosslve: 0
+    - _Dissolution: 0
+    - _DissolvePlane: 0
+    - _DissolveScale: 1
+    - _DstBlend: 0
+    - _FogOff: 0
+    - _Lum: 0.7
+    - _Sat: 0
+    - _SrcBlend: 1
+    - _VirtualStrength: 0.01
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.48484042, g: 0.44895872, b: 0.5566038, a: 1}
