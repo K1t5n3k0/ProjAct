@@ -3,83 +3,62 @@ using UnityEngine;
 public class MainCameraController : MonoBehaviour
 {
     [Header("目标设置")]
-    public Transform target;            // 跟随的目标（玩家）
-    public Vector3 offset = new Vector3(0, 2, -5); // 相对于目标的偏移
+    public Transform target;            
+    public float baseDistance = 5f;     // 基础距离
+    public Vector3 targetOffset = new Vector3(0, 1.5f, 0); // 目标点偏移
     
     [Header("旋转设置")]
-    public float mouseSensitivity = 2f; // 鼠标灵敏度
-    public float gamepadSensitivity = 100f; // 手柄灵敏度
-    public float minVerticalAngle = -30f;   // 垂直旋转最小角度
-    public float maxVerticalAngle = 60f;    // 垂直旋转最大角度
+    public float mouseSensitivity = 100f;
+    public float minVerticalAngle = -30f;
+    public float maxVerticalAngle = 60f;
     
-    [Header("平滑设置")]
-    public float rotationSmoothTime = 0.12f;
-    public float positionSmoothTime = 0.12f;
+    [Header("跟随设置")]
+    public float followSmoothTime = 0.25f; // 只用于角色移动的跟随平滑
+    public float maxDistanceIncrease = 1f;
     
-    // 私有变量
     private float rotationX;
     private float rotationY;
-    private Vector3 currentRotation;
-    private Vector3 rotationSmoothVelocity;
-    private Vector3 currentPosition;
-    private Vector3 positionSmoothVelocity;
+    private Vector3 currentVelocity;
+    private Vector3 smoothedTargetPosition;
     
     private void Start()
     {
-        // 初始化旋转角度
-        rotationX = transform.eulerAngles.x;
-        rotationY = transform.eulerAngles.y;
-        currentRotation = transform.eulerAngles;
-        currentPosition = transform.position;
+        Vector3 angles = transform.eulerAngles;
+        rotationX = angles.x;
+        rotationY = angles.y;
+        smoothedTargetPosition = target.position;
     }
     
     private void LateUpdate()
-{
-    if (target == null) return;
-    
-    // 获取鼠标输入
-    float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-    float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
-    
-    // 注释掉手柄右摇杆输入
-    // float gamepadX = Input.GetAxis("RightStickHorizontal") * gamepadSensitivity * Time.deltaTime;
-    // float gamepadY = Input.GetAxis("RightStickVertical") * gamepadSensitivity * Time.deltaTime;
-    
-    // 仅使用鼠标输入
-    float totalX = mouseX; // + gamepadX;
-    float totalY = mouseY; // + gamepadY;
-    
-    // 更新旋转角度
-    rotationY += totalX;
-    rotationX -= totalY; // 注意这里是减法，因为我们想要上推摇杆时相机向上看
-    rotationX = Mathf.Clamp(rotationX, minVerticalAngle, maxVerticalAngle);
-    
-    // 计算目标旋转
-    Vector3 targetRotation = new Vector3(rotationX, rotationY, 0f);
-    
-    // 平滑插值旋转
-    currentRotation = Vector3.SmoothDamp(
-        currentRotation,
-        targetRotation,
-        ref rotationSmoothVelocity,
-        rotationSmoothTime
-    );
-    
-    // 应用旋转
-    transform.eulerAngles = currentRotation;
-    
-    // 计算目标位置
-    Vector3 targetPosition = target.position + Quaternion.Euler(currentRotation) * offset;
-    
-    // 平滑插值位置
-    currentPosition = Vector3.SmoothDamp(
-        currentPosition,
-        targetPosition,
-        ref positionSmoothVelocity,
-        positionSmoothTime
-    );
-    
-    // 应用位置
-    transform.position = currentPosition;
-}
+    {
+        if (target == null) return;
+        
+        // 平滑处理目标位置（只针对角色移动）
+        smoothedTargetPosition = Vector3.SmoothDamp(
+            smoothedTargetPosition, 
+            target.position, 
+            ref currentVelocity, 
+            followSmoothTime
+        );
+        
+        // 鼠标输入和旋转计算（保持即时响应）
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        
+        rotationY += mouseX;
+        rotationX -= mouseY;
+        rotationX = Mathf.Clamp(rotationX, minVerticalAngle, maxVerticalAngle);
+        
+        // 计算旋转中心点（使用平滑后的目标位置）
+        Vector3 centerPoint = smoothedTargetPosition + targetOffset;
+        
+        // 计算相机旋转和位置（即时响应）
+        Quaternion rotation = Quaternion.Euler(rotationX, rotationY, 0);
+        Vector3 negDistance = new Vector3(0, 0, -baseDistance);
+        Vector3 position = centerPoint + (rotation * negDistance);
+        
+        // 直接设置相机的位置和旋转
+        transform.rotation = rotation;
+        transform.position = position;
+    }
 } 

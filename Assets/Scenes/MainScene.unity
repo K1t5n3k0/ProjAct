@@ -392,13 +392,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1231034030}
-  offset: {x: 0, y: 2, z: -5}
-  mouseSensitivity: 2
-  gamepadSensitivity: 100
+  baseDistance: 3
+  targetOffset: {x: 0, y: 1.5, z: 0}
+  mouseSensitivity: 250
   minVerticalAngle: -30
   maxVerticalAngle: 60
-  rotationSmoothTime: 0.12
-  positionSmoothTime: 0.12
+  followSmoothTime: 0.2
+  maxDistanceIncrease: 0.5
 --- !u!1001 &1231034029
 PrefabInstance:
   m_ObjectHideFlags: 0
