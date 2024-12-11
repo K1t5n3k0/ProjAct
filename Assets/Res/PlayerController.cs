@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 5f;
     public float rollSpeed = 8f;
     public float gravity = -9.81f;
+
+    public float rotationSpeed = 10f;
     
     [Header("组件引用")]
     private CharacterController controller;
@@ -49,12 +51,21 @@ public class PlayerController : MonoBehaviour
         Vector3 move = new Vector3(horizontal, 0f, vertical).normalized;
         if (move != Vector3.zero)
         {
-            // 计算目标旋转角度
-            float targetAngle = Mathf.Atan2(move.x, move.z) * Mathf.Rad2Deg + mainCamera.transform.eulerAngles.y;
-            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+            // 获取相机的前向和右向量，但忽略Y轴分量
+            Vector3 cameraForward = mainCamera.transform.forward;
+            Vector3 cameraRight = mainCamera.transform.right;
+            cameraForward.y = 0;
+            cameraRight.y = 0;
+            cameraForward.Normalize();
+            cameraRight.Normalize();
+        
+            // 根据输入计算移动方向
+            moveDirection = (cameraForward * vertical + cameraRight * horizontal).normalized;
+
+            float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
+            float angle = Mathf.LerpAngle(transform.eulerAngles.y, targetAngle, Time.deltaTime * rotationSpeed);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
             
-            // 移动方向
-            moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             
             // 奔跑
             float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : moveSpeed;
