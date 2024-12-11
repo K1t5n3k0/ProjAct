@@ -1,0 +1,718 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ShaderVariants
+  m_Shaders:
+  - first: {fileID: 4800000, guid: 65ee8080828a1374e832d737e4c2d894, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 13
+  - first: {fileID: 4800000, guid: 0d9ed5f09e12f3b41841bf15c79a7ebf, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_HUE_SHIFT
+        passType: 0
+      - keywords: USE_ROTATION
+        passType: 0
+      - keywords: USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_ROTATION
+        passType: 0
+      - keywords: USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_ROTATION USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_MASK
+        passType: 0
+      - keywords: USE_MASK _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_MASK USE_ROTATION
+        passType: 0
+      - keywords: USE_MASK USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_ROTATION
+        passType: 0
+      - keywords: USE_MASK USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_MASK USE_ROTATION USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_DOUBLE_MASK
+        passType: 0
+      - keywords: USE_DOUBLE_MASK _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_ROTATION
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_ROTATION
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_DISSOLVE
+        passType: 0
+      - keywords: USE_DISSOLVE USE_HUE_SHIFT
+        passType: 0
+      - keywords: USE_DISSOLVE USE_ROTATION
+        passType: 0
+      - keywords: USE_DISSOLVE USE_HUE_SHIFT USE_ROTATION
+        passType: 0
+      - keywords: USE_DISSOLVE USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_DISSOLVE USE_ROTATION USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_DISSOLVE USE_HUE_SHIFT USE_ROTATION USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_NOISE
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_NOISE
+        passType: 0
+      - keywords: USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: USE_NOISE USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_NOISE USE_ROTATION USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_MASK USE_NOISE
+        passType: 0
+      - keywords: USE_MASK USE_NOISE _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_NOISE
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_ROTATION USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_NOISE
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: USE_DISSOLVE USE_NOISE
+        passType: 0
+      - keywords: USE_DISSOLVE USE_HUE_SHIFT USE_NOISE
+        passType: 0
+      - keywords: USE_DISSOLVE USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: USE_DISSOLVE USE_HUE_SHIFT USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: USE_DISSOLVE USE_HUE_SHIFT USE_NOISE USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_ROTATION USE_SOFT_OVER _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DISSOLVE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DISSOLVE USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_NOISE USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_NOISE USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_NOISE USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DISSOLVE USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DISSOLVE USE_HUE_SHIFT USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DISSOLVE USE_NOISE USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DISSOLVE USE_HUE_SHIFT USE_NOISE USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: UI_MASK_CLIP
+        passType: 0
+      - keywords: UI_MASK_CLIP USE_MASK
+        passType: 0
+      - keywords: UI_MASK_CLIP USE_MASK USE_NOISE
+        passType: 0
+      - keywords: CAVE_LIGHT USE_HUE_SHIFT USE_ROTATION
+        passType: 0
+      - keywords: CAVE_LIGHT USE_MASK
+        passType: 0
+      - keywords: CAVE_LIGHT USE_HUE_SHIFT USE_MASK USE_ROTATION
+        passType: 0
+      - keywords: CAVE_LIGHT USE_DOUBLE_MASK
+        passType: 0
+      - keywords: CAVE_LIGHT USE_DISSOLVE
+        passType: 0
+      - keywords: CAVE_LIGHT USE_DISSOLVE USE_ROTATION
+        passType: 0
+      - keywords: CAVE_LIGHT USE_MASK USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: CAVE_LIGHT USE_MASK USE_NOISE USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: CAVE_LIGHT USE_DISSOLVE USE_NOISE USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: CAVE_LIGHT USE_SOFT_OVER
+        passType: 0
+      - keywords: CAVE_LIGHT USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: CAVE_LIGHT USE_DISSOLVE USE_ROTATION USE_SOFT_OVER
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_HUE_SHIFT
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_ROTATION
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_MASK
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_HUE_SHIFT USE_MASK
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_MASK USE_ROTATION
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_HUE_SHIFT USE_MASK USE_ROTATION
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_DOUBLE_MASK
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_DOUBLE_MASK USE_HUE_SHIFT
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_DOUBLE_MASK USE_ROTATION
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_DISSOLVE USE_HUE_SHIFT USE_ROTATION
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_MASK USE_NOISE
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_DOUBLE_MASK USE_NOISE
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT USE_SOFT_OVER
+        passType: 0
+      - keywords: 
+        passType: 13
+      - keywords: FOG_LINEAR
+        passType: 13
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_HUE_SHIFT
+        passType: 13
+      - keywords: USE_HUE_SHIFT _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_ROTATION
+        passType: 13
+      - keywords: USE_MASK
+        passType: 13
+      - keywords: USE_MASK _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_HUE_SHIFT USE_MASK
+        passType: 13
+      - keywords: USE_HUE_SHIFT USE_MASK _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_MASK USE_ROTATION
+        passType: 13
+      - keywords: USE_MASK USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_HUE_SHIFT USE_MASK USE_ROTATION
+        passType: 13
+      - keywords: USE_DOUBLE_MASK
+        passType: 13
+      - keywords: USE_DOUBLE_MASK _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_ROTATION
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_ROTATION
+        passType: 13
+      - keywords: USE_DISSOLVE
+        passType: 13
+      - keywords: USE_DISSOLVE USE_ROTATION
+        passType: 13
+      - keywords: USE_NOISE
+        passType: 13
+      - keywords: USE_NOISE USE_ROTATION
+        passType: 13
+      - keywords: USE_MASK USE_NOISE
+        passType: 13
+      - keywords: USE_MASK USE_NOISE _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_HUE_SHIFT USE_MASK USE_NOISE
+        passType: 13
+      - keywords: USE_MASK USE_NOISE USE_ROTATION
+        passType: 13
+      - keywords: USE_MASK USE_NOISE USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_HUE_SHIFT USE_MASK USE_NOISE USE_ROTATION
+        passType: 13
+      - keywords: USE_MASK USE_NOISE USE_SPLASH_SCREEN
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_NOISE
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_NOISE USE_ROTATION
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE USE_ROTATION
+        passType: 13
+      - keywords: USE_DISSOLVE USE_NOISE USE_ROTATION
+        passType: 13
+      - keywords: USE_SOFT_OVER
+        passType: 13
+      - keywords: USE_ROTATION USE_SOFT_OVER
+        passType: 13
+      - keywords: USE_ROTATION USE_SOFT_OVER _CAVE_LIGHTING_FOG
+        passType: 13
+      - keywords: USE_MASK USE_SOFT_OVER
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_SOFT_OVER
+        passType: 13
+      - keywords: USE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 13
+      - keywords: USE_MASK USE_NOISE USE_ROTATION USE_SOFT_OVER
+        passType: 13
+      - keywords: USE_DOUBLE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 13
+      - keywords: UNITY_UI_CLIP_RECT
+        passType: 13
+      - keywords: UNITY_UI_CLIP_RECT USE_HUE_SHIFT
+        passType: 13
+      - keywords: UNITY_UI_CLIP_RECT USE_ROTATION
+        passType: 13
+      - keywords: UNITY_UI_CLIP_RECT USE_MASK
+        passType: 13
+      - keywords: UNITY_UI_CLIP_RECT USE_MASK USE_ROTATION
+        passType: 13
+      - keywords: UNITY_UI_CLIP_RECT USE_DOUBLE_MASK USE_HUE_SHIFT
+        passType: 13
+      - keywords: UNITY_UI_CLIP_RECT USE_MASK USE_NOISE
+        passType: 13
+      - keywords: UNITY_UI_CLIP_RECT USE_DOUBLE_MASK USE_NOISE
+        passType: 13
+      - keywords: UNITY_UI_CLIP_RECT USE_SOFT_OVER
+        passType: 13
+  - first: {fileID: 4800000, guid: a9afa101789d4aa468a2a7d0af7bb255, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 2bd56142cd4207841ab0a33a8395382f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: CAVE_LIGHT
+        passType: 0
+      - keywords: CAVE_LIGHT _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: UI_MASK_CLIP
+        passType: 0
+  - first: {fileID: 4800000, guid: 3f2b9352293bf644383c86de027a68d3, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: USE_MASK
+        passType: 0
+      - keywords: USE_DOUBLE_MASK
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_NOISE
+        passType: 0
+  - first: {fileID: 4800000, guid: 8b95c292af704f144b1cb9684af8e90a, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 612322446b400a04ca03bd763d07ede0, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_RED_AS_ALPHA
+        passType: 0
+      - keywords: USE_MASK
+        passType: 0
+      - keywords: USE_MASK _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_MASK USE_RED_AS_ALPHA
+        passType: 0
+      - keywords: USE_NOISE
+        passType: 0
+      - keywords: USE_NOISE USE_RED_AS_ALPHA
+        passType: 0
+      - keywords: USE_MASK USE_NOISE
+        passType: 0
+      - keywords: USE_MASK USE_NOISE _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_RED_AS_ALPHA
+        passType: 0
+      - keywords: USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_RED_AS_ALPHA USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_RED_AS_ALPHA USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_RED_AS_ALPHA USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_RED_AS_ALPHA
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_NOISE
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_NOISE
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_RED_AS_ALPHA USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: UI_MASK_CLIP
+        passType: 0
+      - keywords: UI_MASK_CLIP USE_MASK
+        passType: 0
+      - keywords: CAVE_LIGHT
+        passType: 0
+      - keywords: CAVE_LIGHT USE_RED_AS_ALPHA
+        passType: 0
+      - keywords: CAVE_LIGHT USE_MASK
+        passType: 0
+      - keywords: CAVE_LIGHT USE_MASK USE_RED_AS_ALPHA
+        passType: 0
+      - keywords: CAVE_LIGHT USE_NOISE
+        passType: 0
+      - keywords: CAVE_LIGHT USE_SOFT_OVER
+        passType: 0
+  - first: {fileID: 4800000, guid: edbcceb41092b4f4c9f75e5cb6ea4297, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: adba3015acc1d6c4e80b73ce1431e20c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 610761a63b2e10e4587af2d9b7898700, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_ROTATION
+        passType: 0
+      - keywords: USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_MASK
+        passType: 0
+      - keywords: USE_MASK USE_ROTATION
+        passType: 0
+      - keywords: USE_MASK USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: UI_MASK_CLIP
+        passType: 0
+      - keywords: UI_MASK_CLIP _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: UI_MASK_CLIP USE_ROTATION
+        passType: 0
+      - keywords: UI_MASK_CLIP USE_MASK
+        passType: 0
+      - keywords: UI_MASK_CLIP USE_MASK USE_ROTATION
+        passType: 0
+      - keywords: CAVE_LIGHT USE_ROTATION
+        passType: 0
+      - keywords: CAVE_LIGHT USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: CAVE_LIGHT USE_MASK USE_ROTATION
+        passType: 0
+      - keywords: CAVE_LIGHT UI_MASK_CLIP
+        passType: 0
+  - first: {fileID: 4800000, guid: 11a792c6bf9fd2d438c37875c09a40fc, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+      - keywords: FOG_LINEAR
+        passType: 13
+      - keywords: USE_MASK
+        passType: 13
+      - keywords: USE_DOUBLE_MASK
+        passType: 13
+  - first: {fileID: 4800000, guid: c95ec93738404bb4780b31c4c32034b4, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: USE_MASK
+        passType: 0
+      - keywords: USE_DOUBLE_MASK
+        passType: 0
+  - first: {fileID: 4800000, guid: 1f4833383d311424fab3cd0c101e272c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: USE_MASK
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK
+        passType: 0
+      - keywords: USE_MASK USE_SPLASH_SCREEN
+        passType: 0
+      - keywords: USE_DOUBLE_MASK
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT
+        passType: 0
+      - keywords: USE_DISSOLVE
+        passType: 0
+      - keywords: USE_NOISE
+        passType: 0
+      - keywords: USE_MASK USE_NOISE
+        passType: 0
+      - keywords: USE_HUE_SHIFT USE_MASK USE_NOISE
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_NOISE
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_HUE_SHIFT USE_NOISE
+        passType: 0
+      - keywords: USE_DISSOLVE USE_NOISE
+        passType: 0
+      - keywords: USE_DISSOLVE USE_HUE_SHIFT USE_NOISE
+        passType: 0
+      - keywords: USE_CUSTOMDATA
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_MASK
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_DISSOLVE
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_NOISE
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_MASK USE_NOISE
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_DISSOLVE USE_NOISE
+        passType: 0
+      - keywords: USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DOUBLE_MASK USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DISSOLVE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_DISSOLVE USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_MASK USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_HUE_SHIFT USE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_DOUBLE_MASK USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: USE_CUSTOMDATA USE_DISSOLVE USE_NOISE USE_SOFT_OVER
+        passType: 0
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 1005a778bfba6ce44a1b51b7425cda1a, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 271dd139143ce4e469629a083d764407, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 4950d74a6a82c17488decf905c250cb2, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: CAVE_LIGHT
+        passType: 0
+      - keywords: CAVE_LIGHT _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: UI_MASK_CLIP
+        passType: 0
+  - first: {fileID: 4800000, guid: c660115b57eb969498a269a71a8b9de8, type: 3}
+    second:
+      variants:
+      - keywords: USE_ROTATION
+        passType: 0
+      - keywords: USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: USE_NOISE USE_ROTATION
+        passType: 0
+      - keywords: USE_MASK USE_ROTATION
+        passType: 0
+      - keywords: USE_MASK USE_ROTATION _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: CAVE_LIGHT USE_ROTATION
+        passType: 0
+      - keywords: CAVE_LIGHT USE_MASK USE_ROTATION
+        passType: 0
+  - first: {fileID: 4800000, guid: c116a76be0cd9cc478a33f91763adfbe, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: UI_MASK_CLIP
+        passType: 0
+  - first: {fileID: 4800000, guid: c8066ffbcbd452b4db3a82ce50c15707, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 33ca841c7ae6b064ab9c15e326a60e61, type: 3}
+    second:
+      variants:
+      - keywords: USE_MASK
+        passType: 0
+      - keywords: USE_MASK _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: UGUI_MASK_CLIP USE_DOUBLE_MASK USE_MASK
+        passType: 0
+  - first: {fileID: 4800000, guid: 5c07e9bc44ec64241970f46c02c4c27f, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 13
+  - first: {fileID: 4800000, guid: a343e43ddef6ee4448d54bace13894ca, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 9a32964d9737cd24899f7e5edd21034a, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+      - keywords: USE_MASK
+        passType: 13
+      - keywords: USE_NOISE
+        passType: 13
+      - keywords: USE_MASK USE_NOISE
+        passType: 13
+  - first: {fileID: 4800000, guid: d1f067bd80e12064fadbb1ff63ae1c32, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 0
+  - first: {fileID: 4800000, guid: 4e7b58dd66524a346853ca62bfb68b49, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 0e4bd34ecb8c93b4ca9e812fb17f7c5f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 0
+  - first: {fileID: 4800000, guid: c8d79b7e7caef1d4e83460b3a8ed8708, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _CAVE_LIGHTING_FOG
+        passType: 0
+      - keywords: UI_MASK_CLIP
+        passType: 0
+  - first: {fileID: 4800000, guid: 101811aef92a3ce41a8b95f0c8e2059f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UI_MASK_CLIP
+        passType: 0

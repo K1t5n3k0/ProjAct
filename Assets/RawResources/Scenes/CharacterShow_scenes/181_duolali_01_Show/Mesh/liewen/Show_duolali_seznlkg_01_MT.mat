@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Show_duolali_seznlkg_01_MT
+  m_Shader: {fileID: 4800000, guid: 878e67acd3ffa204c888255f1c291477, type: 3}
+  m_ShaderKeywords: _ALPHAMODULATE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - PlaneShadow
+  - SHADOWCASTER
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 2af7ecab226f7c04ca9bb1a762da374b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CubeMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MOE:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: d71d64f983a9ae84c91e344fd35cf6c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 39ad4c8ca352bcd4fbb015470c30445d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ZXSnowMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Advanced: 0
+    - SurfaceInput: 1
+    - SurfaceOptions: 1
+    - SwitchPass: 0
+    - _AlphaClip: 0
+    - _BlendMode: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DstBlend: 10
+    - _Emission_Blend_Albedo_ON: 0
+    - _Emission_ON: 0
+    - _EnvCubeRotation: 0
+    - _EnvCubeStrength: 1
+    - _EnvironmentReflections: 1
+    - _FlickerSpeed: 1
+    - _FogLowerLimit: 0
+    - _FogUpperLimint: 50
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _Metallic: 0
+    - _NormalScale: 0.5
+    - _OcclusionStrength: 1
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _Smoothness: 0.3
+    - _SoftOverGround: 0
+    - _SoftOver_ON: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 5
+    - _Surface: 1
+    - _UseSelfEnvLight: 0
+    - _Vertical_Fog: 0
+    - _VirtualStrength: 0
+    - _WorldNoise: 0
+    - _ZWrite: 0
+    - _ZXSnow: 0
+    m_Colors:
+    - _BaseColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FlickerColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SkyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TilingAndOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _ZXSnowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ZXSnowMapParam: {r: 0.1, g: 1, b: 1, a: 10}
+--- !u!114 &166912508538679280
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2

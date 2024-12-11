@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Show_duolali_Bxb_01_MT
+  m_Shader: {fileID: 4800000, guid: 878e67acd3ffa204c888255f1c291477, type: 3}
+  m_ShaderKeywords: SWITCHPASS_ON _ALPHA_CUTOFF_NONE _ISLINEARSPACE_ON _SPECGLOSSMAP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 05daeaf0b6f59f9448560913fec8964a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CubeMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveDetailMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveLut:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GSSnowMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MOE:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: dc68ce7a65ce1294e9e68fab8aa38a32, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SSSTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SparkleColorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpectrumTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UVMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UVTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ZXSnowMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Advanced: 0
+    - ExtraFuction: 1
+    - SurfaceInput: 1
+    - SurfaceOptions: 1
+    - SwitchPass: 1
+    - _AlphaClip: 0
+    - _Alpha_Cutoff: 0
+    - _AnisoSpecSmoothness: 0.5
+    - _AnisoSpecStrength: 1
+    - _AnisoSpec_ON: 0
+    - _BendScale: 0
+    - _Blend: 1
+    - _BlendMode: 0
+    - _BrightOffset: 0
+    - _BrightStrength: 1
+    - _CameraReflection: 0
+    - _CoatSmoothness: 1
+    - _CoatStrength: 1
+    - _Coat_ON: 0
+    - _Cull: 2
+    - _CullMode: 2
+    - _Custom_Cubemap: 0
+    - _Cutoff: 0.5
+    - _DiffuseArea: 0
+    - _DiffuseLerp: 1
+    - _DiffuseSoft: 1
+    - _DissolveThreshold: 0
+    - _Dissolve_ON: 0
+    - _DstBlend: 0
+    - _Emission_Blend_Albedo_ON: 0
+    - _Emission_ON: 0
+    - _EnvCubeRotation: 0
+    - _EnvCubeStrength: 0
+    - _EnvironmentReflections: 1
+    - _Flicker: 0
+    - _FlickerSpeed: 1
+    - _FogLowerLimit: 0
+    - _FogOff: 0
+    - _FogUpperLimint: 50
+    - _GSSnow: 0
+    - _Gloss: 10
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossinessSource: 0
+    - _GlossyReflections: 0
+    - _HighLine: 50
+    - _IsLinearSpace: 1
+    - _Light_Effect: 0
+    - _LowLine: 0
+    - _Metallic: 0
+    - _MipLevel: 1
+    - _NormalScale: 1
+    - _NormalStrength: 1
+    - _OcclusionStrength: 1
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _RimPower0: 1
+    - _Rim_ON: 0
+    - _SSS_ON: 0
+    - _SelfAmbient: 0
+    - _Shininess: 0
+    - _SkyBox: 0
+    - _Smoothness: 0.55
+    - _SoftOverGround: 0
+    - _SoftOver_ON: 0
+    - _SparkleDensity: 1
+    - _SparkleDependency: 0.436
+    - _SparkleRoughness: 0.218
+    - _SparkleScaleMin: 0.641
+    - _Sparkle_ON: 0
+    - _SpecSource: 0
+    - _SpecStrength: 2
+    - _Spectrum_ON_1: 0
+    - _Spectrum_ON_2: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _UVAnimation_ON: 0
+    - _UseSelfEnvLight: 0
+    - _VertexWave: 0
+    - _Vertical_Fog: 0
+    - _VirtualStrength: 0
+    - _WorldNoise: 0
+    - _WorldPosX: 0
+    - _WorldPosY: 0
+    - _WorldPosZ: 0
+    - _ZWrite: 1
+    - _ZXSnow: 0
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BranchDetail: {r: 1, g: 1, b: 1, a: 1}
+    - _BreathColorInfo: {r: 0, g: 2, b: 0, a: 0}
+    - _BrightParam: {r: -2, g: -1, b: 1, a: 0}
+    - _CameraInitialPos: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 0.8530856, b: 0.8349056, a: 1}
+    - _DissolveParam: {r: 1, g: 0, b: 10, a: 1}
+    - _DissolveTiling: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionParam: {r: 1, g: 0, b: 0, a: 0}
+    - _FlickerColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FlickerParam: {r: 1, g: 1, b: 0, a: 0}
+    - _GSSnowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GSSnowMapParam: {r: 0.1, g: 0.1, b: 1, a: 10}
+    - _MoveSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _RimColor0: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadeColor: {r: 0.9215686, g: 0.6313726, b: 0.6313726, a: 0}
+    - _ShadowColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _SkyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _SparkleColor: {r: 0.9568058, g: 0.9863682, b: 1.062004, a: 1}
+    - _SparkleSize: {r: 300, g: 300, b: 0.00333333, a: 0.00333333}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _SpectrumColor: {r: 0.5, g: 0.5, b: 1, a: 1}
+    - _SpectrumParam: {r: 0.6, g: 1, b: 6, a: 1}
+    - _SpecularColor: {r: 0.4764151, g: 0.71806985, b: 1, a: 1}
+    - _TilingAndOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _UVScrollColor: {r: 0, g: 0, b: 0, a: 1}
+    - _UVSpeed: {r: 0, g: 0, b: 1, a: 1}
+    - _ViewMatU: {r: 2.1551976, g: 0, b: 2.3519852, a: 0}
+    - _ViewMatV: {r: -2.45771, g: 4.5881634, b: 2.2520769, a: 0}
+    - _ViewMatW: {r: -0.59646994, g: -0.5877852, b: 0.5465641, a: 36}
+    - _WindDir: {r: 1, g: 1, b: 1, a: 1}
+    - _ZXSnowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ZXSnowMapParam: {r: 0.1, g: 1, b: 1, a: 33}

@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: show_libeika_skybox_01_MT
+  m_Shader: {fileID: 4800000, guid: 0d9ed5f09e12f3b41841bf15c79a7ebf, type: 3}
+  m_ShaderKeywords: _ALPHAMODULATE_ON _ALPHA_CUTOFF_BLEND _EMISSION_BLEND_ALBEDO
+    _LIGHT_EFFECT_ON _RECEIVE_SHADOWS_OFF _SKYBOX_ON _WORLDNOISE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 1998
+  stringTagMap: {}
+  disabledShaderPasses:
+  - PlaneShadow
+  - SHADOWCASTER
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 88aad6867d383de47a4ea6f56aef1b8d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CubeMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MOE:
+        m_Texture: {fileID: 2800000, guid: b2117feee6604804f925e527b2723f1c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2f267e858edcf5d40a3f8c5231feb728, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask2Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: 69a77017f5b2a5e4e920b18574f68433, type: 3}
+        m_Scale: {x: 1, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ZXSnowMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Advanced: 1
+    - SurfaceInput: 1
+    - SurfaceOptions: 0
+    - SwitchPass: 0
+    - _AlphaClip: 0
+    - _Alpha_Cutoff: 2
+    - _Blend: 1
+    - _BlendMode: 0
+    - _BorderOffset: 0
+    - _BorderWidth: 0
+    - _BumpScale: 1
+    - _ColorMask: 15
+    - _CommonZ: 1
+    - _Cull: 2
+    - _CullMode: 0
+    - _Cutoff: 0
+    - _DissolveDirection: 0
+    - _DissolveWidth: 0
+    - _DstBlend: 10
+    - _Emission_Blend_Albedo_ON: 1
+    - _Emission_ON: 0
+    - _EnvCubeRotation: 0
+    - _EnvCubeStrength: 2
+    - _EnvironmentReflections: 1
+    - _FlickerSpeed: 0
+    - _FogLowerLimit: -44.33
+    - _FogUpperLimint: 0
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _HighLine: 2
+    - _HueShift: 0
+    - _Light_Effect: 1
+    - _LowLine: 3.47
+    - _MainRotation: 0
+    - _Mask2Strength: 0
+    - _MaskRotation: 0
+    - _MaskStrength: 0
+    - _Metallic: 0
+    - _NormalScale: 0
+    - _OcclusionStrength: 1
+    - _QueueOffset: 0
+    - _ReceiveShadows: 0
+    - _RenderMode: 1
+    - _Saturation: 1
+    - _SetVertexColor: 1
+    - _SkyBox: 1
+    - _Smoothness: 0
+    - _SmoothnessTextureChannel: 0
+    - _SoftOverGround: 0
+    - _SoftOver_ON: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _Surface: 0
+    - _UIClip: 0
+    - _UIEffectAlpha: 1
+    - _UseHueShift: 0
+    - _UseNoise: 0
+    - _UseRotaion: 0
+    - _UseSelfEnvLight: 0
+    - _UseSoftOver: 0
+    - _Vertical_Fog: 0
+    - _VirtualStrength: 0
+    - _WorkflowMode: 1
+    - _WorldNoise: 1
+    - _ZTest: 4
+    - _ZWrite: 0
+    - _ZXSnow: 0
+    - __ClipMode: 0
+    - __MaskMode: 0
+    - _useSplashScreen: 0
+    m_Colors:
+    - _AlphaChannel: {r: 0, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BorderColor: {r: 0, g: 0, b: 0, a: 1}
+    - _COLOR: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 0.25882354, b: 0, a: 1}
+    - _FlickerColor: {r: 0, g: 0.32854462, b: 1, a: 1}
+    - _MaskChannel: {r: 0, g: 0, b: 0, a: 1}
+    - _NoiseParam: {r: 0, g: 0, b: 0, a: 0}
+    - _SkyColor: {r: 0.054799944, g: 0, b: 0.41099998, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _TilingAndOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _UVOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ZXSnowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ZXSnowMapParam: {r: 0.1, g: 1, b: 1, a: 10}
+--- !u!114 &7781427338074028205
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
