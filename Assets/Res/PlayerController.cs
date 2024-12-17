@@ -23,6 +23,12 @@ public class PlayerController : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
     private bool isRolling;
+    private bool canAttack = true;
+    private bool canUseSkill = true;
+    
+    [Header("战斗设置")]
+    public float attackCooldown = 0.5f;
+    public float skillCooldown = 2f;
     
     void Start()
     {
@@ -95,6 +101,24 @@ public class PlayerController : MonoBehaviour
         // 重力
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+        
+        // 在Update末尾添加攻击和技能检测
+        HandleCombat();
+    }
+    
+    void HandleCombat()
+    {
+        // 普通攻击
+        if (Input.GetKeyDown(KeyCode.J) && canAttack && !isRolling)
+        {
+            StartCoroutine(Attack());
+        }
+        
+        // 技能1
+        if (Input.GetKeyDown(KeyCode.K) && canUseSkill && !isRolling)
+        {
+            StartCoroutine(UseSkill());
+        }
     }
     
     IEnumerator Roll()
@@ -113,5 +137,27 @@ public class PlayerController : MonoBehaviour
         }
         
         isRolling = false;
+    }
+    
+    IEnumerator Attack()
+    {
+        canAttack = false;
+        animator?.SetTrigger("Attack");
+        
+        // 等待攻击动画完成
+        yield return new WaitForSeconds(attackCooldown);
+        
+        canAttack = true;
+    }
+    
+    IEnumerator UseSkill()
+    {
+        canUseSkill = false;
+        animator?.SetTrigger("Skill01");
+        
+        // 等待技能动画完成
+        yield return new WaitForSeconds(skillCooldown);
+        
+        canUseSkill = true;
     }
 }
